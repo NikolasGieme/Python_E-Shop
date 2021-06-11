@@ -2,14 +2,16 @@ from tkinter import *
 window = Tk()
 root = Tk()
 root.title("NickMart")
-root.geometry('420x50')
+root.geometry('420x100')
 window.title("NickMart")
 window.geometry('950x650')
 totalvalue = 0
 
 
 def Check():
+    window.destroy()
     Label(root, text="The total value of the stuff you bought is "+str(totalvalue)+"€.\nEverything will arrive at your home in 5 to 10 working days.", font=20, relief=SUNKEN, borderwidth=7, bg="dodgerblue").pack()
+    Button(root, text="Done", font=20, relief=RAISED, borderwidth=5, bg="lime", command=lambda: root.quit()).place(x=180, y=55)
     root.mainloop()
 
 
