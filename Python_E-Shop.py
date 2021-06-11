@@ -11,7 +11,7 @@ totalvalue = 0
 def Check():
     window.destroy()
     Label(root, text="The total value of the stuff you bought is "+str(totalvalue)+"€.\nEverything will arrive at your home in 5 to 10 working days.", font=20, relief=SUNKEN, borderwidth=7, bg="dodgerblue").pack()
-    Button(root, text="Done", font=20, relief=RAISED, borderwidth=5, bg="lime", command=lambda: root.quit()).place(x=180, y=55)
+    Button(root, text="Done", font=20, relief=RAISED, borderwidth=5, bg="blue", fg="White", command=lambda: root.destroy()).place(x=180, y=55)
     root.mainloop()
 
 
@@ -39,7 +39,7 @@ class Menu:
         self.value2 = value2
         self.value3 = value3
         self.value4 = value4
-        self.main_label = Label(window, text=self.name, font=5, bg="lime", relief=RAISED, borderwidth=7, anchor=N, height=13, width=31)
+        self.main_label = Label(window, text=self.name, font=5, bg="blue", fg="white", relief=RAISED, borderwidth=7, anchor=N, height=13, width=31)
         self.main_label.place(x=self.x, y=self.y)
         self.checkbutton1 = Checkbutton(window, text=self.obj1+": "+str(self.value1)+"€", bg="royalblue", height=5, relief=RAISED, borderwidth=5, width=14, var=self.rb1)
         self.checkbutton1.place(x=self.x+12, y=self.y+40)
