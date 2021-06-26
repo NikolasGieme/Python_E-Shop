@@ -49,12 +49,12 @@ class Menu:
         self.checkbutton3.place(x=self.x+12, y=self.y+140)
         self.checkbutton4 = Checkbutton(window, text=self.obj4+": "+str(self.value4)+"€", bg="dodgerblue", height=5, relief=RAISED, borderwidth=5, width=14, var=self.rb4)
         self.checkbutton4.place(x=self.x+150, y=self.y+140)
-        self.rb1.trace("w", self.FinalCheck)
-        self.rb2.trace("w", self.FinalCheck)
-        self.rb3.trace("w", self.FinalCheck)
-        self.rb4.trace("w", self.FinalCheck)
+        self.rb1.trace("w", self.Tracing)
+        self.rb2.trace("w", self.Tracing)
+        self.rb3.trace("w", self.Tracing)
+        self.rb4.trace("w", self.Tracing)
 
-    def FinalCheck(self, *args):
+    def Tracing(self, *args):
         global totalvalue
         if self.rb1.get():
             totalvalue += self.value1
@@ -67,7 +67,7 @@ class Menu:
 
 
 Label(window, text="NickMart\nKitchen Appliances", font=20, width=45, relief=SUNKEN, borderwidth=7, bg="dodgerblue").place(x=270, y=0)
-fridge = Menu("Refrigerators", "Miele\nKFN15943SD\nED/CS", "Siemens\niQ70\nKG56FSBDA", "Neff\nKG7493BD0", "Bosch\nKGN864IFA", 2500, 1459, 1515, 1770, 10, 70)
+fridges = Menu("Refrigerators", "Miele\nKFN15943SD\nED/CS", "Siemens\niQ70\nKG56FSBDA", "Neff\nKG7493BD0", "Bosch\nKGN864IFA", 2500, 1459, 1515, 1770, 10, 70)
 ovens = Menu("Ovens", "Siemens\nHB513ABR00", "Bosch\nHBA513BB1", "Miele\nΗ 7460 B", "Neff\nB3AVH4HN1", 529, 599, 1699, 1299, 320, 70)
 hobs = Menu("Kitchen Hobs", "Miele\nKM 7684\nFL", "Siemens\nEX875KYW1E", "Neff\nT68TS6RN0", "Franke\nFHR 604 C\nT BK", 1999, 1669, 1559, 545, 630, 70)
 dishwashers = Menu("Dishwashers", "Siemens\nSN25ZI55CE", "Bosch\nSMS4HDW52E", "Whirlpool\nWFO 3O33 DL\nX 60cm Inox", "Morris\nTTW-55081\nWhite", 1305, 905, 619, 359, 10, 340)
