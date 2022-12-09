@@ -49,12 +49,12 @@ class Menu:
         self.checkbutton3.place(x=self.x+12, y=self.y+140)
         self.checkbutton4 = Checkbutton(window, text=self.obj4+": "+str(self.value4)+"€", bg="dodgerblue", height=5, relief=RAISED, borderwidth=5, width=14, var=self.rb4)
         self.checkbutton4.place(x=self.x+150, y=self.y+140)
-        self.rb1.trace("w", self.FinalCheck)
-        self.rb2.trace("w", self.FinalCheck)
-        self.rb3.trace("w", self.FinalCheck)
-        self.rb4.trace("w", self.FinalCheck)
+        self.rb1.trace("w", self.Tracing)
+        self.rb2.trace("w", self.Tracing)
+        self.rb3.trace("w", self.Tracing)
+        self.rb4.trace("w", self.Tracing)
 
-    def FinalCheck(self, *args):
+    def Tracing(self, *args):
         global totalvalue
         if self.rb1.get():
             totalvalue += self.value1
