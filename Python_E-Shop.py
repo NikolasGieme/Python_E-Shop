@@ -67,7 +67,7 @@ class Menu:
 
 
 Label(window, text="NickMart\nKitchen Appliances", font=20, width=45, relief=SUNKEN, borderwidth=7, bg="dodgerblue").place(x=270, y=0)
-fridge = Menu("Refrigerators", "Miele\nKFN15943SD\nED/CS", "Siemens\niQ70\nKG56FSBDA", "Neff\nKG7493BD0", "Bosch\nKGN864IFA", 2500, 1459, 1515, 1770, 10, 70)
+fridges = Menu("Refrigerators", "Miele\nKFN15943SD\nED/CS", "Siemens\niQ70\nKG56FSBDA", "Neff\nKG7493BD0", "Bosch\nKGN864IFA", 2500, 1459, 1515, 1770, 10, 70)
 ovens = Menu("Ovens", "Siemens\nHB513ABR00", "Bosch\nHBA513BB1", "Miele\nΗ 7460 B", "Neff\nB3AVH4HN1", 529, 599, 1699, 1299, 320, 70)
 hobs = Menu("Kitchen Hobs", "Miele\nKM 7684\nFL", "Siemens\nEX875KYW1E", "Neff\nT68TS6RN0", "Franke\nFHR 604 C\nT BK", 1999, 1669, 1559, 545, 630, 70)
 dishwashers = Menu("Dishwashers", "Siemens\nSN25ZI55CE", "Bosch\nSMS4HDW52E", "Whirlpool\nWFO 3O33 DL\nX 60cm Inox", "Morris\nTTW-55081\nWhite", 1305, 905, 619, 359, 10, 340)
